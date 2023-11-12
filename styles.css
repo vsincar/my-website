@@ -1,0 +1,66 @@
+/* Güncellenmiş Navigation Bar Stili */
+
+        a {
+            color:black;
+            font-weight: bold;
+            
+        }
+
+        #imgicon {
+            
+            width: 30px;
+            height: 30px;
+        }
+        li {
+            line-height: 1.5;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            vertical-align: middle;
+        }
+        li img {
+            margin-right: 10px; /* Resim ile metin arasındaki boşluk */
+        }
+        
+        h1 {
+            background-color: black;
+            color: white;
+            background-size: 25px, 25px;
+            margin: 5px;
+
+        }
+        #h2a {
+            vertical-align: middle;
+            margin-bottom: 5px;
+            padding-bottom: 15px;
+            padding-top: 15px;
+           
+        }
+        #bttmline {
+            background-color: black;
+            color: white;
+            background-size: 25px, 25px;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            background-color: black;
+            padding: 10px;
+            position: fixed;
+            width: auto;
+            top: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+            margin-left: 10px; /* Bağlantılar arasında 10 piksellik boşluk */
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }

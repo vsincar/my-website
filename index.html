@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px, 5px;
+        }
+        header {
+            text-align: center;
+            padding: 5px;
+        }
+        section {
+            margin: 20px 0;
+        }
+        .about-me-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .about-me-image img {
+            width: 150px; /* Genişlik */
+            height: 150px; /* Yükseklik */
+            margin-right: 20px; /* Aralık */
+        }
+        .about-me-text {
+            flex: 0 0 65%; /* "About Me" metni oranı */
+            text-align: justify; /* Metin sağa yaslanacak */
+        }
+        h2 {
+            font-size: 1.5em;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+        }
+        .social-media, .contact {
+            text-align: left; /* Sola dayalı hizalama */
+        }
+        
+        /* Medya sorguları */
+        @media only screen and (max-width: 600px) {
+            .about-me-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .about-me-text {
+                flex: 0 0 100%; /* Tam genişlik */
+                margin-top: 20px; /* Metin ile fotoğraf arasındaki boşluk */
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <nav>
+        <a href="#portfolio">Portfolio</a>
+        <a href="index.html">About Me</a>
+    </nav>
+    <header>
+        <h1>About Me</h1>
+    </header>
+    <section>
+        <div class="about-me-container">
+            <div class="about-me-image">
+                <!-- Güncellenmiş fotoğraf linki -->
+                <img src="icons/V_Logo.png" alt="Veysel Sincar" style="width: 150px; height: 150px;">
+            </div>
+            <div class="about-me-text">
+                <p>Hello! I'm Veysel Sincar. I was born in Batman, graduated from Vocational High School. Currently, I live in Istanbul, Turkey. I'm working on coding and programming in my own capacity. I am improving myself on Javascript, HTML, CSS, and Python. In the future, I aim to have a career in this field and work with well-known companies. </p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>You can reach me via email at <a href="mailto:vsincar@gmail.com"><img id="imgicon" src="icons/gmail.gif" alt="Mail to me">vsincar@gmail.com</a></p>
+        <p>Check out my GitHub profile at <a href="https://github.com/vsincar" target="_blank"><img id="imgicon" src="icons/github.gif" alt="GitHub">github.com/vsincar</a></p>
+    </section>
+    <section class="social-media">
+        <h2 id="h2a">Social Media</h2>
+        <p>You can follow me on social media:</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/veysincar" target="_blank"><img id="imgicon" src="icons/linkedin.gif" alt="LinkedIn">LinkedIn</a></li>
+            <li><a href="https://www.facebook.com/veysincar" target="_blank"><img id="imgicon" src="icons/facebook.gif" alt="Facebook">Facebook</a></li>
+            <li><a href="https://www.instagram.com/vyslsncr" target="_blank"><img id="imgicon" src="icons/instagram.gif" alt="Instagram">Instagram</a></li>
+            <!-- Diğer sosyal medya hesapları buraya eklenebilir -->
+        </ul>
+    </section>
+    <footer>
+        <p id="bttmline">&copy; 2023 Veysel Sincar. All rights reserved.</p>
+    </footer>
+    
+</body>
+</html>
